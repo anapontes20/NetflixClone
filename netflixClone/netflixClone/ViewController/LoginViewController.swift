@@ -7,11 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    let loginView = LoginView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view = loginView
+        
+        loginView.backgroundColor = .purple
         // Do any additional setup after loading the view.
     }
 
