@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view = loginView
         
-        loginView.backgroundColor = .purple
+        loginView.backgroundColor = .yellow
         // Do any additional setup after loading the view.
     }
 
