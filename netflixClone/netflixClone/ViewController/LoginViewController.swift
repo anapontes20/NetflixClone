@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
     func loginButtonTapped() {
         model.login = loginView.usernameTextField.text ?? ""
         model.senha = loginView.passwordTextField.text ?? ""
-        //let model = LoginModel(login: loginView.usernameTextField.text ?? "", senha: loginView.passwordTextField.text ?? "")
+        
     }
     
 }

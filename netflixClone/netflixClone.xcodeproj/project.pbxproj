@@ -14,6 +14,8 @@
 		2AE1B1842A255BDB00E9B5C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE1B1822A255BDB00E9B5C5 /* LaunchScreen.storyboard */; };
 		2AE1B18F2A25649C00E9B5C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B18E2A25649C00E9B5C5 /* LoginView.swift */; };
 		2AE1B1912A27D13700E9B5C5 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B1902A27D13700E9B5C5 /* LoginModel.swift */; };
+		2AFFF7F92A3136AE0052839D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFF7F82A3136AE0052839D /* HomeViewController.swift */; };
+		2AFFF7FB2A3136CC0052839D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFF7FA2A3136CC0052839D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2AE1B1852A255BDB00E9B5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE1B18E2A25649C00E9B5C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2AE1B1902A27D13700E9B5C5 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2AFFF7F82A3136AE0052839D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2AFFF7FA2A3136CC0052839D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE1B18E2A25649C00E9B5C5 /* LoginView.swift */,
+				2AFFF7FA2A3136CC0052839D /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */,
+				2AFFF7F82A3136AE0052839D /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -165,10 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AE1B1912A27D13700E9B5C5 /* LoginModel.swift in Sources */,
+				2AFFF7FB2A3136CC0052839D /* HomeView.swift in Sources */,
 				2AE1B17F2A255BD900E9B5C5 /* netflixClone.xcdatamodeld in Sources */,
 				2AE1B1792A255BD900E9B5C5 /* LoginViewController.swift in Sources */,
 				2AE1B18F2A25649C00E9B5C5 /* LoginView.swift in Sources */,
 				2AE1B1752A255BD900E9B5C5 /* AppDelegate.swift in Sources */,
+				2AFFF7F92A3136AE0052839D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
