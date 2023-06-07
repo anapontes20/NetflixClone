@@ -8,8 +8,18 @@
 import UIKit
 
 struct LoginModel {
-    var login: String
-    var senha: String
+    var login: String?
+    var senha: String?
+    
+    init() {
+        
+    }
+    
+    init(login: String, senha: String) {
+        self.login = login
+        self.senha = senha
+    }
+    
 }
 
 
