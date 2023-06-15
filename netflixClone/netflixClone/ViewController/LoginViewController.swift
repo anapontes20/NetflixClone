@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginViewDelegate {
+class LoginViewController: UIViewController{
     
   
     let loginView = LoginView()
@@ -16,16 +16,20 @@ class LoginViewController: UIViewController, LoginViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginView.loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         view = loginView
     }
     
-    func loginButtonTapped() {
+    @objc func loginButtonTapped() {
         model.login = loginView.usernameTextField.text ?? ""
         model.senha = loginView.passwordTextField.text ?? ""
+        let homeViewController = HomeViewController()
+        navigationController?.show(homeViewController, sender: false)
+     
         
     }
     
+ 
 }
 
 

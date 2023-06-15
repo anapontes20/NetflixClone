@@ -28,7 +28,7 @@ class LoginView: UIView  {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.backgroundColor = .red
-        button.addTarget(LoginView.self, action: #selector(loginButtonTapped), for: .touchUpInside)
+//        button.addTarget(LoginView.self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -67,9 +67,10 @@ class LoginView: UIView  {
        ])
    }
      
-     @objc private func loginButtonTapped() {
-         delegate?.loginButtonTapped()
-     }
+//     @objc private func loginButtonTapped() {
+//         delegate?.loginButtonTapped()
+//         
+//     }
 }
 
 protocol LoginViewDelegate: AnyObject {
