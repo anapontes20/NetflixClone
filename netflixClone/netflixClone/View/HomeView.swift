@@ -50,7 +50,7 @@ class HomeView: UIView {
             teste.centerYAnchor.constraint(equalTo: centerYAnchor),
             teste.widthAnchor.constraint(equalToConstant: 100),
             
-            filmList.translatesAutoresizingMaskIntoConstraints = false
+            // ele nao esta reconhecendo o termo view
             filmList.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
             filmList.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
             filmList.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
