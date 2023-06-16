@@ -28,11 +28,10 @@ class LoginView: UIView  {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.backgroundColor = .red
-//        button.addTarget(LoginView.self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button
     }()
     
-    weak var delegate: (LoginViewDelegate)?
+    //weak var delegate: (LoginViewDelegate)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
