@@ -9,21 +9,16 @@ import UIKit
 
 
 class HomeView: UIView {
-    
+        
     let filmList: UITableView = {
-        let filmList = UITableView()
+        let filmList = UITableView(frame: .zero, style: .plain)
         filmList.backgroundColor = .white
+        filmList.isScrollEnabled = true
+//        filmList.delegate = self()
+//        filmList.dataSource = self()
         return filmList
         }()
     
-    
-    let teste: UIButton = {
-       let button = UIButton()
-       button.setTitle("teste", for: .normal)
-       button.backgroundColor = .black
-        
-       return button
-   }()
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,31 +34,37 @@ class HomeView: UIView {
     func setupViews() {
         
         addSubview(filmList)
-        addSubview(teste)
         
-        teste.translatesAutoresizingMaskIntoConstraints = false
         filmList.translatesAutoresizingMaskIntoConstraints = false
 
         
         NSLayoutConstraint.activate([
-            teste.centerXAnchor.constraint(equalTo: centerXAnchor),
-            teste.centerYAnchor.constraint(equalTo: centerYAnchor),
-            teste.widthAnchor.constraint(equalToConstant: 100),
-            
-            // ele nao esta reconhecendo o termo view
-            filmList.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-            filmList.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-            filmList.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-            filmList.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+            filmList.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            filmList.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            filmList.topAnchor.constraint(equalTo: self.topAnchor),
+            filmList.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
       
-               
+            
+            
+        }
                 
             
         
 }
-    }
     
     
     
+//extension HomeView:UITableViewDelegate, UITableViewDataSource {
+////    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+////        return 2
+////    }
+////    
+////    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////        let cell = tableView.dequeueReusableCell(withIdentifier: "teste", for: <#T##IndexPath#>)
+////    }
+////    
+//    
+//    
+//}
     
