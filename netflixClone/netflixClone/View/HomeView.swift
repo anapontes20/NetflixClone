@@ -10,12 +10,10 @@ import UIKit
 
 class HomeView: UIView {
         
-    let filmList: UITableView = {
+        let filmList: UITableView = {
         let filmList = UITableView(frame: .zero, style: .plain)
         filmList.backgroundColor = .white
         filmList.isScrollEnabled = true
-//        filmList.delegate = self()
-//        filmList.dataSource = self()
         return filmList
         }()
     
@@ -44,27 +42,14 @@ class HomeView: UIView {
             filmList.topAnchor.constraint(equalTo: self.topAnchor),
             filmList.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
-      
-            
+
             
         }
-                
-            
         
 }
     
+
+        
     
-    
-//extension HomeView:UITableViewDelegate, UITableViewDataSource {
-////    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-////        return 2
-////    }
-////    
-////    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////        let cell = tableView.dequeueReusableCell(withIdentifier: "teste", for: <#T##IndexPath#>)
-////    }
-////    
-//    
-//    
-//}
+
     
