@@ -31,7 +31,6 @@ class LoginView: UIView  {
         return button
     }()
     
-    //weak var delegate: (LoginViewDelegate)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3111F22A4269CA00A11AA1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3111F12A4269CA00A11AA1 /* MovieCell.swift */; };
 		2AE1B1752A255BD900E9B5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B1742A255BD900E9B5C5 /* AppDelegate.swift */; };
 		2AE1B1792A255BD900E9B5C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */; };
 		2AE1B17F2A255BD900E9B5C5 /* netflixClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B17D2A255BD900E9B5C5 /* netflixClone.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3111F12A4269CA00A11AA1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2AE1B1712A255BD900E9B5C5 /* netflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1B1742A255BD900E9B5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */,
 				2AFFF7F82A3136AE0052839D /* HomeViewController.swift */,
+				2A3111F12A4269CA00A11AA1 /* MovieCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				2AE1B1912A27D13700E9B5C5 /* LoginModel.swift in Sources */,
 				2AFFF7FB2A3136CC0052839D /* HomeView.swift in Sources */,
+				2A3111F22A4269CA00A11AA1 /* MovieCell.swift in Sources */,
 				2AE1B17F2A255BD900E9B5C5 /* netflixClone.xcdatamodeld in Sources */,
 				2AE1B1792A255BD900E9B5C5 /* LoginViewController.swift in Sources */,
 				2AE1B18F2A25649C00E9B5C5 /* LoginView.swift in Sources */,

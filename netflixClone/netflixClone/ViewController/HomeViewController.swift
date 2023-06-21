@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = homeview
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         homeview.filmList.dataSource = self
         homeview.filmList.delegate = self
     }
@@ -29,9 +29,9 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier:"UITableViewCell" )
-        cell.textLabel?.text = "Célula \(indexPath.item)"
-        return cell
+        let movieCell = tableView.dequeueReusableCell(withIdentifier: "teste", for: indexPath   )
+        
+        return movieCell
     }
 }
 

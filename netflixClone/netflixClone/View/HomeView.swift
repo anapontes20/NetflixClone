@@ -10,12 +10,14 @@ import UIKit
 
 class HomeView: UIView {
         
-        let filmList: UITableView = {
-        let filmList = UITableView(frame: .zero, style: .plain)
-        filmList.backgroundColor = .white
-        filmList.isScrollEnabled = true
-        return filmList
-        }()
+    let filmList: UITableView = {
+    let filmList = UITableView()
+    filmList.backgroundColor = .clear
+    filmList.register(MovieCell.self, forCellReuseIdentifier: "teste")
+    filmList.rowHeight = 150
+    filmList.estimatedRowHeight = 150
+    return filmList
+}()
     
    
     override init(frame: CGRect) {
@@ -37,10 +39,10 @@ class HomeView: UIView {
 
         
         NSLayoutConstraint.activate([
-            filmList.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            filmList.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            filmList.topAnchor.constraint(equalTo: self.topAnchor),
-            filmList.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            filmList.leadingAnchor.constraint(equalTo: leadingAnchor),
+            filmList.trailingAnchor.constraint(equalTo: trailingAnchor),
+            filmList.topAnchor.constraint(equalTo: topAnchor),
+            filmList.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
 
             
