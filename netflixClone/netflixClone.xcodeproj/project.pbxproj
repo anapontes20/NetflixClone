@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2DC0AE2A4343F200D185BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC0AD2A4343F200D185BC /* DetailViewController.swift */; };
+		2A2DC0B02A43440100D185BC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC0AF2A43440100D185BC /* DetailView.swift */; };
 		2A3111F22A4269CA00A11AA1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3111F12A4269CA00A11AA1 /* MovieCell.swift */; };
 		2AE1B1752A255BD900E9B5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B1742A255BD900E9B5C5 /* AppDelegate.swift */; };
 		2AE1B1792A255BD900E9B5C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A2DC0AD2A4343F200D185BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2A2DC0AF2A43440100D185BC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2A3111F12A4269CA00A11AA1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2AE1B1712A255BD900E9B5C5 /* netflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1B1742A255BD900E9B5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			children = (
 				2AE1B18E2A25649C00E9B5C5 /* LoginView.swift */,
 				2AFFF7FA2A3136CC0052839D /* HomeView.swift */,
+				2A2DC0AF2A43440100D185BC /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			children = (
 				2AE1B1782A255BD900E9B5C5 /* LoginViewController.swift */,
 				2AFFF7F82A3136AE0052839D /* HomeViewController.swift */,
+				2A2DC0AD2A4343F200D185BC /* DetailViewController.swift */,
 				2A3111F12A4269CA00A11AA1 /* MovieCell.swift */,
 			);
 			path = ViewController;
@@ -173,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2DC0AE2A4343F200D185BC /* DetailViewController.swift in Sources */,
 				2AE1B1912A27D13700E9B5C5 /* LoginModel.swift in Sources */,
 				2AFFF7FB2A3136CC0052839D /* HomeView.swift in Sources */,
+				2A2DC0B02A43440100D185BC /* DetailView.swift in Sources */,
 				2A3111F22A4269CA00A11AA1 /* MovieCell.swift in Sources */,
 				2AE1B17F2A255BD900E9B5C5 /* netflixClone.xcdatamodeld in Sources */,
 				2AE1B1792A255BD900E9B5C5 /* LoginViewController.swift in Sources */,
